@@ -42,6 +42,7 @@ padding: 0;}
     to{clip-path:inset(10% 10% 10% 10%) ; visibility: hidden;}
     
 }
+
 /* header */
 header{
     width: 100%;
@@ -544,12 +545,41 @@ footer img{
 .tabliq:hover{
     cursor: pointer;
 }
+.bottom-blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 150px;
+}
 
-/* =========================================================
-   Responsive / Mobile
-   Desktop styles above remain unchanged.
-   No image assets are modified.
-   ========================================================= */
+.blog-card {
+    width: 100%;
+    
+}
+
+.bottom-main .bottom-img {
+    width: 150%;
+    
+    height: 200px;
+    margin: 0;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.btm-sec {
+    font-size: smaller;
+}
+
+.btm-sec h2 {
+    font-family: sahel;
+}
+
+.btm-sec h3 {
+    font-family: samim;
+    color: grey;
+    text-align: justify;
+    line-height: 1.8;
+}
+/* Responsive / Mobile*/
 @media (max-width: 768px) {
     html,
     body {
@@ -1019,7 +1049,7 @@ footer img{
     }
 }
 
-/* Very small phones */
+/* small phones */
 @media (max-width: 420px) {
     header {
         height: 122px;
@@ -1079,5 +1109,27 @@ footer img{
 
     .main-section {
         min-height: 280px;
+    }
+}
+@media (max-width: 768px) {
+
+    .bottom-blog-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .bottom-main .bottom-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btm-sec h2 {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .btm-sec h3 {
+        font-size: 11px;
+        line-height: 2;
     }
 }
