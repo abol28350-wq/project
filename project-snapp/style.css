@@ -97,7 +97,7 @@ header ul{
      background-color: white;
      
 }
-header #super-app:hover ul{
+header #super-app input:checked ul{
     visibility: visible;
    animation: open 0.2s ease-out forwards;
   
